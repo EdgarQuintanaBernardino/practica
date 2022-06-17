@@ -1,12 +1,21 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <b-container fluid>
+        <Crud-Prueba/>
+      </b-container>
     </nav>
-    <router-view/>
   </div>
 </template>
+<script>
+import CrudPrueba from'@/components/Crud'
+export default {
+  components:{
+      CrudPrueba,
+    
+  }
+}
+</script>
 
 <style>
 #app {
